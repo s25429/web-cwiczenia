@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-dev": "npx webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production & cp ./src/data/*.png ./dist/assets/"
   },
   "author": "Cezary Ciślak <s25429@pjwstk.edu.pl>",
   "license": "MIT",

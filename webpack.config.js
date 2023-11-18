@@ -16,7 +16,7 @@ module.exports = {
             use: ['style-loader', 'css-loader'],
         }, {
             test: /\.(png|jp(e*)g|svg|gif)$/,
-            use: ['file-loader']
+            use: ['file-loader', { options: { name: path.join(__dirname, 'dist', 'assets', '[name].[ext]') } }],
         }]
     },
     devtool: 'eval-source-map',
